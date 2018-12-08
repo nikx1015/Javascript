@@ -1,0 +1,15 @@
+header {
+    width: 100vw;
+    height:100vh;
+}
+div {
+    width: 30vw;
+    padding: 4rem;
+}
+h3
+{
+    position: center;
+}
+h1.name {
+    font-size: 2em;
+}
