@@ -29,18 +29,18 @@ var movieSchedule = [
       poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
     }
 ] 
-    var titleContainer = document.querySelector("#title");
-    var ratingContainer = document.querySelector("#rating");
-    var posterContainer = document.querySelector("#poster");
+    var titlesContainer = document.querySelector("#Movietitles");
+    var ratingContainer = document.querySelector("#movieRating");
+    var moviePosterContainer = document.querySelector("#moviePoster");
 
 
-    titleContainer.innerHTML = movieSchedule.title;
+    titlesContainer.innerHTML = movieSchedule.titles;
     ratingContainer.innerHTML = movieSchedule.rating;
     posterContainer.innerHTML = movieSchedule.moviePoster;
 
-  var htmlString = '
-    <h1 class="movieTitle">${movieSchedule.name}</h1>;
+  var htmlString = `
+    <h1 class="movieTitles">${movieSchedule.names}</h1>;
     <h2 class="movieRating">${movieSchedule.rating}</h2>;
-    <h3 class="moviePoster">${movieSchedule.poster}</h3>;
+    <h3 class="moviePoster">${movieSchedule.Movieposter}</h3>;
     <img class="movieImage" src=${movieSchedule.imageUrl} alt="Movie Poster"/>;
     `
