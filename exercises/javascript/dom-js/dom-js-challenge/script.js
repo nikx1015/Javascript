@@ -15,17 +15,31 @@ var movieSchedule = [
       poster: "https://images-na.ssl-images-amazon.com/images/I/716fk%2BBZ-NL._SY606_.jpg"
     }
 ] 
-    var movieContainer = document.querySelector("#movie");
-    var ratingContainer = document.querySelector("#rating");
-    var moviePosterContainer = document.querySelector("#poster");
+var htmlString = `
 
-    movieContainer.innerHTML = movieSchedule.movie;
-    ratingContainer.innerHTML = movieSchedule.rating;
-    posterContainer.innerHTML = movieSchedule.moviePoster;
+<h3 class ="title">${movieSchedule[0].title}</h3>
 
-    var htmlString = `
-        <h1 class="movie">${movieSchedule.movie}</h1>;
-        <h2 class="rating">${movieSchedule.rating}</h2>;
-        <h3 class="poster">${movieSchedule.poster}</h3>;
-        <img class="movieImage" src=${movieSchedule.imageUrl} alt="Movie Poster"/>;
-    `
+<p class = "rating">Rated: ${movieSchedule[0].rating}<p>
+
+<img class = "movie-poster" src=${movieSchedule[0].poster} alt = Movie Poster"/>
+
+<br/>
+
+<h3 class ="title">${movieSchedule[1].title}</h3>
+
+<p class = "rating">Rated: ${movieSchedule[1].rating}<p>
+
+<img class = "movie-poster" src=${movieSchedule[1].poster} alt = Movie Poster"/>
+
+<br/>
+
+<h3 class ="title">${movieSchedule[2].title}</h3>
+
+<p class = "rating">Rated: ${movieSchedule[2].rating}<p>
+
+<img class = "movie-poster" src=${movieSchedule[2].poster} alt = Movie Poster"/>
+`
+
+document.querySelector("#movie-schedule").innerHTML = htmlString;
+
+alert("herro");
